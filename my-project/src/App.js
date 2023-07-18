@@ -52,6 +52,7 @@ function App() {
         <h1 className="title">Top Manga</h1>
         <Routes>
           <Route path="/" element={
+            <>
             <div className="manga-list">
               {currentItems.map((manga) => (
 
@@ -61,6 +62,8 @@ function App() {
                    <div className="manga-name">Название аниме:{manga.ru_name}</div>
                 </Link>  
               ))}
+              
+            </div>
               <div className="pagination">
                 <a
                   className="pagination-btn"
@@ -83,7 +86,7 @@ function App() {
                   <IoIosArrowForward size={24} color="#A5A5A5"/>
                 </a>
               </div>
-            </div>
+            </>
           } />
           
         </Routes>

@@ -52,7 +52,7 @@ body{
 
  
 .pagination {
-  transform: translate(300px, -80px);
+  /* transform: translate(300px, -80px); */
   display: flex;
   justify-content: center;
   list-style: none;
